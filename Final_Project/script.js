@@ -50,15 +50,11 @@ function setup() {
                 if (matrix[i][j] == 1) {
                     if (data.weather == "Ձմեռ"){
                         fill("white")
-                }
-                if (matrix[i][j] == 2) {
-                    if (data.weather == "Գարուն") {
+                }else if (data.weather == "Գարուն") {
                         fill("purple");
-                    }
-                    if (matrix[i][j] == 3){
-                        if (data.weather == "Ամառ") {
+                }else if(data.weather == "Ամառ") {
                         fill("green");
-                    } else if(data.weather == "Աշուն") {
+                } else if(data.weather == "Աշուն") {
                         fill("orange");
                     }
                     rect(j * side, i * side, side, side);
@@ -82,4 +78,3 @@ function setup() {
         }
     }
 }
-    

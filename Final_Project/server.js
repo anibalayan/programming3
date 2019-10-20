@@ -114,10 +114,14 @@ let weather = "winter"
 function game() {
 
     exanak++;
-    if (exanak <= 10){
-        weather = "summer"
+    if (exanak <= 5){
+        weather = "Ձմեռ"
+    }else if (exanak <= 10){
+        weather = "Գարուն"
+    }else if (exanak <= 15){
+        weather = "ամառ"
     }else if (exanak <= 20){
-        weather = "autumn"
+        weather = "աշուն"
     }else if (exanak > 20){
         exanak = 0
     }
